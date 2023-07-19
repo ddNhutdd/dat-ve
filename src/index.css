@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../public/font/Pony.ttf);
+}
+
+body,
+html {
+  font-family: myFont;
+}
+
+/* content-book */
+.content-book {
+  background-image: url(../public/images/banner.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-book__container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  padding: 30px 0;
+  min-height: 100vh;
+}
+
+/* main */
+.main {
+  width: 70%;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.main__title {
+  color: orange;
+  padding-bottom: 30px;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.main .main__text {
+  color: white;
+  margin-bottom: 3px;
+}
+
+.main .main__screen-position {
+  border-bottom: 50px solid rgb(252, 223, 129);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100%;
+  box-shadow: 0px 20px 18px -4px rgba(252, 223, 129, 0.3);
+}
+
+.main .main__list-seat table {
+  color: orange;
+  width: 80%;
+  margin: auto;
+}
+
+.main .main__list-seat table tbody td,
+.main .main__list-seat table tbody th {
+  min-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.main .main__list-seat table input[type="checkbox"] {
+  display: none;
+}
+
+.main .main__list-seat table label {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.main .main__list-seat table input[type="checkbox"]+label:hover {
+  cursor: pointer;
+}
+
+.main .main__list-seat table input[type="checkbox"]:checked+label {
+  background-color: blue;
+}
+
+.main .main__list-seat table input[disabled]+label {
+  background-color: orange;
+  pointer-events: none;
+}
+
+/* side */
+.side {
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+}
+
+.side__title {
+  color: white;
+  padding-bottom: 30px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.side__guide {
+  text-align: left;
+}
+
+.side__guide__line span:first-child {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.side__guide__line span:last-child {
+  color: white;
+}
+
+.side__guide__line__booked {
+  background-color: orange;
+}
+
+.side__guide__line__booking {
+  background-color: blue;
+}
+
+.side__guide__line__empty {
+  background-color: white;
+}
+
+.side__table table {
+  width: 100%;
+  color: white;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.side__table table th,
+.side__table table td {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid white;
+}
+
+.side__table table thead {
+  color: white;
+}
+
+.side__table table tbody {
+  color: orange;
+}
+
+.side__table table tbody tr td:last-child {
+  color: red;
+}
+
+.side__table table tbody tr td:last-child span:hover {
+  cursor: pointer;
+}
+
+.side__table table tfoot td {
+  color: orange;
+}
+
+.side button {
+  margin-top: 20px;
+  background: orange;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 30px;
+}
